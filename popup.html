@@ -1,0 +1,65 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Intentions</title>
+    <style>
+      body {
+        font-style: "Helvetica";
+      }
+      input {
+        
+        width: 550px;
+        height: 50px;      
+        font-size: 24px;
+        outline: none;
+        text-indent: 10px;
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .classIntentionContainer {
+        width: 550px;
+        height: 300px;
+        overflow: scroll;
+        overflow-x: hidden; 
+        font-size: 24px;
+        outline: #b3b3b3 solid thin;
+      }
+      .classTitleIntention {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+      .classDivIntention {
+        width: 550px;
+        height: 30px;
+        font-size: 24px;
+
+      }
+      .classIntentionName {
+        vertical-align: middle;
+        width: 400px;
+
+      }
+      .classDeleteBtn {
+        float: right;
+        vertical-align: middle;
+
+      }
+    </style>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body id="bodyIntention">
+    <input type="text" id="txtRegisterIntention" placeholder="Enter Your Intentions Here and press enter to save"  /> 
+      
+    </div>
+
+  </body>
+</html>
+

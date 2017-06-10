@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Intentions",
+  "description": "This extension shows your intentions.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title":  "Intention"
+  },
+  "chrome_url_overrides": {
+    "newtab": "blank.html"
+  },
+  "icons": {
+    "16": "icon-16-16.png",
+    "48": "icon-48-48.png",
+    "128":  "icon-128-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
